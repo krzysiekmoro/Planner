@@ -14,11 +14,6 @@ import firebase from 'firebase/app'
 
 const middleware = thunk.withExtraArgument({ getFirebase, getFirestore });
 
-// const store = createStore(
-//   rootReducer,
-//   compose(applyMiddleware(middleware), reduxFirestore(fbConfig), reactReduxFirebase(fbConfig))
-// );
-
 const store = createStore(
   rootReducer,
   compose(applyMiddleware(middleware), reduxFirestore(fbConfig))
