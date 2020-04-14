@@ -28,7 +28,7 @@ const rrfProps = {
   firebase,
   config: rrfConfig,
   dispatch: store.dispatch,
-  createFirestoreInstance // <- needed if using firestore
+  createFirestoreInstance, // <- needed if using firestore
 }
 
 ReactDOM.render(
